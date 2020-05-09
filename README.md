@@ -1,0 +1,2 @@
+# embedded-common
+Utils code
