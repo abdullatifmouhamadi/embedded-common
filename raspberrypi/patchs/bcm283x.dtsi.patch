@@ -1,0 +1,18 @@
+--- bcm283x.dtsi        2018-06-03 23:15:21.000000000 +0200
++++ bcm283x_new.dtsi    2018-08-17 10:03:05.457380253 +0200
+@@ -226,6 +226,15 @@
+                                brcm,pull = <BCM2835_PUD_OFF>;
+                        };
+
++                       spi0_pins: spi0_pins {
++                               brcm,pins = <9 10 11>;
++                               brcm,function = <4>; /* alt0 */
++                       };
++                       spi0_cs_pins: spi0_cs_pins {
++                               brcm,pins = <8 7>;
++                               brcm,function = <1>; /* output */
++                       };
++
+                        i2c0_gpio0: i2c0_gpio0 {
+                                brcm,pins = <0 1>;
+                                brcm,function = <BCM2835_FSEL_ALT0>;

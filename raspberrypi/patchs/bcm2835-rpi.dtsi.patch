@@ -1,0 +1,15 @@
+--- bcm2835-rpi.dtsi	2018-08-17 09:24:34.182332126 +0200
++++ bcm2835-rpi_new.dtsi	2018-08-17 09:48:35.293436367 +0200
+@@ -17,6 +17,12 @@
+ 	};
+ 
+ 	soc {
++
++                gpiomem {
++                        compatible = "brcm,bcm2835-gpiomem";
++                        reg = <0x7e200000 0x1000>;
++                };
++
+ 		firmware: firmware {
+ 			compatible = "raspberrypi,bcm2835-firmware", "simple-bus";
+ 			#address-cells = <0>;
