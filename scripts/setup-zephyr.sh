@@ -7,7 +7,7 @@ cd zephyrproject
 west update
 
 west zephyr-export
-pip install --user -r zephyrproject/zephyr/scripts/requirements.txt
+pip install --user -r zephyr/scripts/requirements.txt
 
 
 
