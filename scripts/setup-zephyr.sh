@@ -60,6 +60,10 @@ west init -l manifest-repo
 west update
 west zephyr-export
 
+rm -rf app1/.git -rf app2/.git
+
+
+echo "DONE!"
 
 
 
